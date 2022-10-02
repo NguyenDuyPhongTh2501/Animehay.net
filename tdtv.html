@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon logo" type="image/png" href="img/anime.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Tiên Đế Trở Về |Animehay.net</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-with-search">
+            <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                    <div class="header__logo-text">
+                        <b>ANIMEHAY</b>
+                        <span>.NET</span>
+                    </div>
+                </a>
+            </div>
+            <div class="header__search">
+                <div class="header__search-input-wrap">
+                    <input type="text" class="header__search-input" placeholder="Nhập vào phim cần tìm...">
+                    <div class="header__search-history">
+                    </div>
+                </div>
+                <a href="">
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- menu trái -->
+        <div class="header__navbar">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Hội Viên</a>
+                <a href="#">Nạp Tiền</a>
+                <a href="#">Phim Đã Mua</a>
+                <a href="#">Số Dư</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer;color: #fff; padding-left: 80px;"
+                onclick="openNav()">&#9776;</span>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item">
+                    <a href="">Thể Loại
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="header__navbar-sub-list">
+                        <div class="sub-list-wrap-1">
+                            <li class="header__navbar-sub-item"><a href="">Xuyên Không</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Kinh Dị</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Học Đường</a></li>
+                        </div>
+                        <div class="sub-list-wrap-2">
+                            <li class="header__navbar-sub-item"><a href="">Kiếm Hiệp</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Trùng Sinh</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Dị Giới</a></li>
+                        </div>
+                        <div class="sub-list-wrap-3">
+                            <li class="header__navbar-sub-item"><a href="">Siêu Năng Lực</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Tiên Hiệp</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Võ Hiệp</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="">Năm chiếu
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="header__navbar-sub-list">
+                        <div class="sub-list-wrap-1">
+                            <li class="header__navbar-sub-item"><a href="">2022</a></li>
+                            <li class="header__navbar-sub-item"><a href="">2021</a></li>
+                            <li class="header__navbar-sub-item"><a href="">2020</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Tất Cả</a></li>
+
+                        </div>
+                        <div class="sub-list-wrap-2">
+                            <li class="header__navbar-sub-item"><a href="">2019</a></li>
+                            <li class="header__navbar-sub-item"><a href="">2018</a></li>
+                            <li class="header__navbar-sub-item"><a href="">2017</a></li>
+                        </div>
+                        <div class="sub-list-wrap-3">
+                            <li class="header__navbar-sub-item"><a href="">2016</a></li>
+                            <li class="header__navbar-sub-item"><a href="">2015</a></li>
+                            <li class="header__navbar-sub-item"><a href="">2014</a></li>
+                        </div>
+                        <div class="sub-list-wrap-4">
+                            <li class="header__navbar-sub-item"><a href="">2013</a></li>
+                            <li class="header__navbar-sub-item"><a href="">2012</a></li>
+                            <li class="header__navbar-sub-item"><a href="">2011</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="header__navbar-item"><a href="">HH 3D Trung Quốc</a></li>
+                <li class="header__navbar-item"><a href="">HH 2D Trung Quốc</a></li>
+                <li class="header__navbar-item"><a href="">Phim Hoàn Thành</a></li>
+                <li class="header__navbar-item"><a href="">Lịch Chiếu</a></li>
+            </ul>
+    </header>
+    <article>
+        <div class="TTCH">
+            <img src="img/tien-de-tro-ve.jpg" alt="">
+            <div class="hooo">
+                <tr>
+                    <td>Tập:</td>
+                    <td>124</td>
+                </tr>
+                <p>Thể loại: <span>2D</span></p>
+                <p>Giới Thiệu:</p>
+                <br>Thương Lam đại lục, Võ giả dùng Võ Hồn câu thông thiên địa, tiến hành tu hành. 
+                <br>Gia tộc Thiếu chủ Tần Nam, tại kỳ ngộ dưới sự trùng hợp, thu được một tia đến từ Thái Cổ thần bí Chiến Thần chi hồn.
+                <br>Từ đó về sau, một đường nghịch tập, gặp gỡ bất ngờ tiên tư mỹ nữ, nghiền ép Cửu Giới thiên tài, không chỗ không chiến, không chỗ không thắng. Trở thành Vô Thượng Thiên Tôn.
+                <br>CVT:
+                Truyện YY, main bá, map rộng, main vượt cấp, có gái, đọc giải trí là chính, có truyện tranh cùng tên, truyện chữ đã ra hoàn tất (mình ra chương nhanh) ~ khoảng hơn 3k chương 
+                Cảnh giới: 
+                <br>Thối Thể cảnh, Tiên Thiên cảnh, Võ Vương cảnh, Võ Tông cảnh, Võ Hoàng cảnh, Võ Tôn cảnh, Võ Thánh cảnh, Võ Tổ cảnh, Võ Đế cảnh, Võ Thần cảnh
+                Nhân Thần, Địa Thần, Thiên Thần . . . (Còn nữa)
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>

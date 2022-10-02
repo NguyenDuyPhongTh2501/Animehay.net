@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon logo" type="image/png" href="img/anime.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap&subset=vietnamese"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>AnimeHay.Net | Phim Hoạt Hình Hay Nhất Mọi Thời Đại</title>
+</head>
+
+<body onload="myF()">
+  <!-- QC trái -->
+  <div class="float-ck" style="left: 0px">
+    <div id="hide_float_left">
+      <a href="javascript:hide_float_left()" style="font-size: 14px;">Tắt quảng cáo[X]</a>
+    </div>
+    <div id="float_content_left">
+      <!-- Start quang cao-->
+      <img src="img/2-kiem-vuc-phong-van.jpg" width="300px" height="150px">
+      <!-- End quang cao -->
+    </div>
+  </div>
+  <div id="onl">
+    <div class="item-contac">
+      <a href="javascript:un()"> <i class="fas fa-window-close fa-2x"></i></a>
+      <img src="img/6-dien-thoai-cua-ta-thong-tam-gioi.jpg" />
+    </div>
+  </div>
+  <!-- quảng cáo trái-->
+  <script type="text/javascript">
+    function hide_float_left() {
+      var content = document.getElementById('float_content_left');
+      var hide = document.getElementById('hide_float_left');
+      if (content.style.display == "none") { content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_left()" style="font-size: 14px;"> Tắt quảng cáo [X]</a>'; }
+      else {
+        content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_left() " style="font-size: 14px; text-decoration: none; ">Vui Lòng Liên Hệ Với</a>';
+      }
+    }
+    function myF() {
+      onl.style.display = "block";
+
+    }
+    function un() {
+      onl.style.display = "none";
+    }
+  </script>
+
+  <header class="header">
+    <div class="header-with-search">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <div class="header__logo-text">
+            <b>ANIMEHAY</b>
+            <span>.NET</span>
+          </div>
+        </a>
+      </div>
+      <div class="header__search">
+        <div class="header__search-input-wrap">
+          <input type="text" class="header__search-input" placeholder="Nhập vào phim cần tìm...">
+          <div class="header__search-history">
+          </div>
+        </div>
+        <a href="">
+          <button class="header__search-btn">
+            <i class="header__search-btn-icon fas fa-search"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- menu trái -->
+    <div class="header__navbar">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Hội Viên</a>
+        <a href="#">Nạp Tiền</a>
+        <a href="#">Phim Đã Mua</a>
+        <a href="#">Số Dư</a>
+      </div>
+      <span style="font-size:30px;cursor:pointer;color: #fff; padding-left: 80px;" onclick="openNav()">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+      <ul class="header__navbar-list">
+        <li class="header__navbar-item">
+          <a href="">Thể Loại
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <ul class="header__navbar-sub-list">
+            <div class="sub-list-wrap-1">
+              <li class="header__navbar-sub-item"><a href="">Xuyên Không</a></li>
+              <li class="header__navbar-sub-item"><a href="">Kinh Dị</a></li>
+              <li class="header__navbar-sub-item"><a href="">Học Đường</a></li>
+            </div>
+            <div class="sub-list-wrap-2">
+              <li class="header__navbar-sub-item"><a href="">Kiếm Hiệp</a></li>
+              <li class="header__navbar-sub-item"><a href="">Trùng Sinh</a></li>
+              <li class="header__navbar-sub-item"><a href="">Dị Giới</a></li>
+            </div>
+            <div class="sub-list-wrap-3">
+              <li class="header__navbar-sub-item"><a href="">Siêu Năng Lực</a></li>
+              <li class="header__navbar-sub-item"><a href="">Tiên Hiệp</a></li>
+              <li class="header__navbar-sub-item"><a href="">Võ Hiệp</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="header__navbar-item">
+          <a href="">Năm chiếu
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <ul class="header__navbar-sub-list">
+            <div class="sub-list-wrap-1">
+              <li class="header__navbar-sub-item"><a href="">2022</a></li>
+              <li class="header__navbar-sub-item"><a href="">2021</a></li>
+              <li class="header__navbar-sub-item"><a href="">2020</a></li>
+              <li class="header__navbar-sub-item"><a href="">Tất Cả</a></li>
+
+            </div>
+            <div class="sub-list-wrap-2">
+              <li class="header__navbar-sub-item"><a href="">2019</a></li>
+              <li class="header__navbar-sub-item"><a href="">2018</a></li>
+              <li class="header__navbar-sub-item"><a href="">2017</a></li>
+            </div>
+            <div class="sub-list-wrap-3">
+              <li class="header__navbar-sub-item"><a href="">2016</a></li>
+              <li class="header__navbar-sub-item"><a href="">2015</a></li>
+              <li class="header__navbar-sub-item"><a href="">2014</a></li>
+            </div>
+            <div class="sub-list-wrap-4">
+              <li class="header__navbar-sub-item"><a href="">2013</a></li>
+              <li class="header__navbar-sub-item"><a href="">2012</a></li>
+              <li class="header__navbar-sub-item"><a href="">2011</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="header__navbar-item"><a href="">HH 3D Trung Quốc</a></li>
+        <li class="header__navbar-item"><a href="">HH 2D Trung Quốc</a></li>
+        <li class="header__navbar-item"><a href="">Phim Hoàn Thành</a></li>
+        <li class="header__navbar-item"><a href="">Lịch Chiếu</a></li>
+      </ul>
+  </header>
+  <div class="container">
+
+    <!-- slide -->
+    <div class="mySlides">
+
+      <img class="banner-img" src="slide/1.png" style="width:100%;">
+    </div>
+
+    <div class="mySlides">
+
+      <img class="banner-img" src="slide/2.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+      <img class="banner-img" src="slide/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+      <img class="banner-img" src="slide/4.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+      <img class="banner-img" src="slide/5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+      <img class="banner-img" src="slide/6.webp" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="row">
+      <div class="column">
+        <img class="Show cursor" src="slide/1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="Show cursor" src="slide/2.webp" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="Show cursor" src="slide/3.jpg" style="width:100%" onclick="currentSlide(3)"
+          alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="Show cursor" src="slide/4.webp" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="Show cursor" src="slide/5.jpg" style="width:100%" onclick="currentSlide(5)"
+          alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="Show cursor" src="slide/6.webp" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+  <!-- AUTOPLAY -->
+  <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+  </script>
+  <article>
+    <H1>PHIM MỚI CẬP NHẬT</H1>
+    <div id="Contact-content">
+      <div class="sub-main">
+        <table width="100%" border="0">
+          <tr>
+            <td><a href="ttch.html"><img src="img/tuyet-the-chien-hon.jpg " alt="" style="width:250px; "></a></td>
+            <td><a href="tlkt.html"><img src="img/tu-la-kiem-ton.jpg " alt="" style="width:250px;"></a></td>
+            <td><a href="ttdm.html"><img src="img/tuyet-the-duong-mon.jpg " alt="" style="width:250px;"></a></td>
+            <td><a href="tdtv.html"><img src="img/tien-de-tro-ve.jpg " alt="" style="width:250px;"></a></td>
+          </tr>
+          <tr>
+            <td class="pon"><b>Tuyệt Thế Chiến Hồn</b></td>
+            <td class="pon"><b>Tu La Kiếm Tôn</b></td>
+            <td class="pon"><b>Tuyệt Thế Đường Môn</b></td>
+            <td class="pon"><b>Tiên Đế Quay Trở Về</b></td>
+          </tr>
+          <tr>
+            <td><button class="btn-primary"> Xem Phim </button>
+            </td>
+            <td><button class="btn-primary">
+                Xem Phim
+              </button></td>
+            <td><button class="btn-primary">
+                Xem Phim
+              </button></td>
+            <td><button class="btn-primary">
+                Xem Phim
+              </button></td>
+          </tr>
+        </table>
+        <table width="100%" border="0">
+          <tr>
+            <td><img src="img/2-kiem-vuc-phong-van.jpg " class="img-thumbnail" alt="halo4" style="width:250px; "></td>
+            <td><img src="img/3dai-vuong-tha-mang.jpg" class="img-thumbnail" alt="Pikachu" style="width:250px;">
+            </td>
+            <td><img src="img/4-cuong-than-ma-ton.jpg " class="img-thumbnail" alt="gangsta" style="width:250px;"></td>
+            <td><img src="img/5-son-ha-kiem-tam.jpg" class="img-thumbnail" alt="MU" style="width:250px;"></td>
+          </tr>
+          <tr>
+            <td class="pon"><b>Kiếm Vực Phong Vân</b></td>
+            <td class="pon"><b>Đại Vương Tha Mạng</b></td>
+            <td class="pon"><b>Cuồng Thần Ma Tôn</b></td>
+            <td class="pon"><b>Sơn Hà Kiếm Tâm</b></td>
+          </tr>
+          <tr>
+            <td><button class="btn-primary"> Xem Phim </button>
+            </td>
+            <td><button class="btn-primary">
+                Xem Phim
+              </button></td>
+            <td><button class="btn-primary">
+                Xem Phim
+              </button></td>
+            <td><button class="btn-primary">
+                Xem Phim
+              </button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="container-conten">
+    </div>
+    <H1>PHIM GIÁ RẺ</H1>
+    <div id="Contact-content">
+      <div class="sub-main">
+        <table width="100%" border="0">
+          <tr>
+            <td><img src="img/chien-dinh.jpg" class="img-thumbnail" alt="PUBG" style="width:250px; "></td>
+            <td><img src="img/ngao-thi-thien-dia.jpg" class="img-thumbnail" alt="Clash of Clans" style="width:250px;">
+            </td>
+            <td><img src="img/vu-em-tien-ton-di-o-re.jpg" class="img-thumbnail" alt="Free Fire" style="width:250px;">
+            </td>
+            <td><img src="img/3dai-vuong-tha-mang.jpg" class="img-thumbnail" alt="League of Legend"
+                style="width:250px;"></td>
+          </tr>
+          <tr>
+            <td class="pon"><b>Chiến Đỉnh Vương</b></td>
+            <td class="pon"><b>Ngao Thị Thiên Địa</b></td>
+            <td class="pon"><b>Vú Em Tiên Tôn</b></td>
+            <td class="pon"><b>Chiến Thần Vương</b></td>
+          </tr>
+          <tr class="giagoc">
+            <td class="po">Giá gốc: 200.000 đ</td>
+            <td class="po">Giá gốc: 200.000 đ</td>
+            <td class="po">Giá gốc: 200.000 đ</td>
+            <td class="po">Giá gốc: 200.000 đ</td>
+          </tr>
+          <tr class="giamoi">
+            <td class="pin">
+              <p>Chỉ còn: 149.000 đ</p>
+            </td>
+            <td class="pin">
+              <p>Chỉ còn: 149.000 đ</p>
+            </td>
+            <td class="pin">
+              <p>Chỉ còn: 149.000 đ</p>
+            </td>
+            <td class="pin">
+              <p>Chỉ còn: 149.000 đ</p>
+            </td>
+          </tr>
+          <tr>
+            <td><button class="btn-primary">
+                <i class="fas fa-cart-arrow-down" style="color: #f00"></i> Mua Phim
+              </button></td>
+            <td><button class="btn-primary">
+                <i class="fas fa-cart-arrow-down" style="color: #f00"></i> Mua Phim
+              </button></td>
+            <td> <button class="btn-primary">
+                <i class="fas fa-cart-arrow-down" style="color: #f00"></i> Mua Phim
+              </button></td>
+            <td><button class="btn-primary">
+                <i class="fas fa-cart-arrow-down" style="color: #f00"></i> Mua Phim
+              </button></td>
+          </tr>
+        </table>
+      </div>
+      <div class="sub-main">
+        <table width="100%" border="0">
+
+          <tr class="phim">
+            <td><img src="img/6-dien-thoai-cua-ta-thong-tam-gioi.jpg" class="img-thumbnail" alt="Dragon-city"
+                style="width:250px; "></td>
+            <td><img src="img/8-su-phu-nha-toi-sieu-hung-du.jpg" class="img-thumbnail" alt="Free Fire"
+                style="width:250px;">
+            </td>
+            <td><img src="img/bat-dau-voi-chi-ton-dan-dien.jpg" class="img-thumbnail" alt="League of Legend"
+                style="width:250px;"></td>
+            <td> <img src="img/1-ta-co-mot-son-trai.jpg" class="img-thumbnail" alt="Arena of Valor"
+                style="width:250px;"></td>
+          </tr>
+          <tr>
+            <td class="pon"><b>Thông Tam Giới</b></td>
+            <td class="pon"><b>Sư Phụ Hung Dữ</b></td>
+            <td class="pon"><b>Chí Tôn Đan Điền</b></td>
+            <td class="pon"><b>Sơn Trại Vương</b></td>
+          </tr>
+          <tr class="giagoc">
+            <td class="po">Giá gốc: 200.000 đ</td>
+            <td class="po">Giá gốc: 200.000 đ</td>
+            <td class="po">Giá gốc: 200.000 đ</td>
+            <td class="po">Giá gốc: 200.000 đ</td>
+          </tr>
+          <tr class="giamoi">
+            <td class="pin">
+              <p>Chỉ còn: 149.000 đ</p>
+            </td>
+            <td class="pin">
+              <p>Chỉ còn: 149.000 đ</p>
+            </td>
+            <td class="pin">
+              <p>Chỉ còn: 149.000 đ</p>
+            </td>
+            <td class="pin">
+              <p>Chỉ còn: 149.000 đ</p>
+            </td>
+          </tr>
+          <tr>
+            <td><button class="btn-primary">
+                <i class="fas fa-cart-arrow-down" style="color: #f00"></i> Mua Phim
+              </button></td>
+            <td><button class="btn-primary">
+                <i class="fas fa-cart-arrow-down" style="color: #f00"></i> Mua Phim
+              </button></td>
+            <td> <button class="btn-primary">
+                <i class="fas fa-cart-arrow-down" style="color: #f00"></i> Mua Phim
+              </button></td>
+            <td><button class="btn-primary">
+                <i class="fas fa-cart-arrow-down" style="color: #f00"></i> Mua Phim
+              </button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </article>
+  <!-- Watch flash sale -->
+  <div class="countdown-time">
+    <div id="clock">
+      <div class="clocktxt">Flash Sale </div>
+      <br>
+      <br>
+      <div>
+        <span id="hours"></span>
+        <div class="clocktxt">Giờ</div>
+      </div>
+      <div>
+        <span id="minutes"></span>
+        <div class="clocktxt">Phút</div>
+      </div>
+      <div>
+        <span id="seconds"></span>
+        <div class="clocktxt">Giây</div>
+      </div>
+
+    </div>
+
+  </div>
+  <div id="sub-content">
+    <a href="index.html"><img src="slide/sale.PNG" style="width:100%; height: auto;"></a>
+  </div>
+  <!-- JS flash sale -->
+  <script>
+    var h;
+    var m;
+    var s;
+    function init() {
+      h = '2';
+      m = '59';
+      s = '60';
+      clock();
+    }
+    function clock() {
+      s--;
+      if (s == 0) {
+        s = 59;
+        m--;
+        if (m == 0) {
+          m = 59;
+          h--;
+          if (h == 0) {
+            h = 24;
+          }
+
+        }
+      }
+      change('seconds', s);
+      change('minutes', m);
+      change('hours', h);
+      setTimeout(clock, 1000);
+    }
+    function change(id, val) {
+      if (val < 10) {
+        val = '0' + val;
+      }
+      document.getElementById(id).innerHTML = val;
+    }
+    window.onload = init();
+  </script>
+
+  <script src="Main.js"></script>
+  <!--FOOTER-->
+  <div id="footer">
+    <footer>
+      <div class="footer-row">
+        <div class="footer-gt">
+          <h3>Giới thiệu</h3>
+          <p>Animehay.net always updates the earliest
+          <p>movies so you don't wait long. All comments can </p>
+          <p>be printed via the following applications and websites.</p>
+          </p>
+        </div>
+        <div class="footer-tt">
+          <h3>Thông tin</h3>
+          <ul>
+
+            <li><a href="">
+                <ion-icon name="person-circle-outline"></ion-icon>
+              </a> Name: Nguyễn Duy Phong</li>
+            <li><a href="">
+                <ion-icon name="school-outline"></ion-icon>
+              </a> Class: TH25.01</li>
+            <li><a href="">
+                <ion-icon name="call-outline"></ion-icon>
+              </a> Phone: +84 984 701 593</li>
+            <li><a href="">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a> Email: infornguyenduyphong@gmail.com</li>
+            <li><a href="">
+                <ion-icon name="location-outline"></ion-icon>
+              </a> Address: Ngõ 120 Vĩnh Tuy - Hai Bà Trưng - Hà Nội</li>
+            <li style="padding-bottom: 20px;"><a href="">
+                <ion-icon name="home-outline"></ion-icon>
+              </a> University: Đại học kinh doanh và công nghệ Hà Nội</li>
+          </ul>
+
+        </div>
+        <div class="footer-ngon">
+          <h3>Theo dõi</h3>
+          <li><a href="https://www.facebook.com/INFOR.NDP" target="_blank" class="icon-search">
+              <i class="fab fa-facebook" style="color: rgb(2, 4, 129)"></i>
+            </a></li>
+          <li><a href="https://www.messenger.com/INFOR.NDP" target="_blank" class="icon-search">
+              <i class="fab fa-facebook-messenger" style="color: rgb(255, 255, 255);"></i>
+            </a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" class="icon-search">
+              <i class="fab fa-instagram" style="color: rgb(82, 14, 54);"></i>
+            </a></li>
+          <li><a href="https://www.youtube.com/channel/UCkpUH9dMQ4R90CSalyi9ChA" target="_blank" class="icon-search">
+              <i class="fab fa-youtube" style="color: red;"></i>
+            </a></li>
+        </div>
+      </div>
+  </div>
+  <div class="end">
+    <h4>Copyright © 2022 ANIMEHAY.net All rights reserved.</h4>
+  </div>
+  </footer>
+</body>
+
+</html>
